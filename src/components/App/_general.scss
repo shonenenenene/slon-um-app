@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:regular,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:regular,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:regular,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:regular&display=swap');
+
+$titles-font: 'Nunito', sans-serif;
+$common-font: 'Rubick', sans-serif;
+
+$main-color: #1F1D2A;
+$main-accent-color: #14A76C;
+$additional-accent-color: #FF652F;
+$extra-accent-color: #E02D05;
+$bg-color: #FFFFFF;
+$buttons-color: $main-accent-color;
+
+@mixin flex($jc, $ai) {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+body {
+    font-family: $common-font;
+    font-size: 20px;
+    background-color: $bg-color;
+}
+
+.container {
+    max-width: 1430px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 1920px;
+}
+
