@@ -1,6 +1,6 @@
 export interface ISvgProps {
     id: string
-    className: string
+    className?: string
 }
 
 export interface IButton {

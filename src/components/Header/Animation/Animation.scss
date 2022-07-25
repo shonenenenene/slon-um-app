@@ -1,0 +1,19 @@
+.header-animation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    .header-animation-container {
+        position: relative;
+        .girl {
+            position: absolute;
+            bottom: -110px;
+            right: 11.4vw;
+        }
+        .planes {
+            position: absolute;
+            bottom: -110px;
+            right: 530px;
+        }
+    }
+}

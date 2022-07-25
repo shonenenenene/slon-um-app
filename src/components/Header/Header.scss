@@ -1,32 +1,38 @@
 @import '../App/App.scss';
 
 .header {
-    .header-content {
-        max-width: 650px;
-        margin-top: 200px;
-        @include flex(flex-start, center);
-        span {
-            text-transform: uppercase;
-            font-size: 15px;
-            line-height: 25px;
-            color: #9FA0A7;
-            letter-spacing: 0.08em;
-        }
-        h1 {
-            margin-bottom: 40px;
-        }
-        .p2 {
-            margin-bottom: 60px;
-        }
-        div {
+    .header-container {
+        .header-content {
+            max-width: 650px;
+            margin-top: 200px;
             @include flex(flex-start, center);
-            .header-content-btn {
-                padding: 10px 75px;
-                background-color: $main-accent-color;
-                box-shadow: 0px 15px 30px rgba($color: $main-accent-color, $alpha: 0.25);
-                border-radius: 15px;
-                margin-right: 75px;
+            span {
+                text-transform: uppercase;
+                font-size: 15px;
+                line-height: 25px;
+                color: #9FA0A7;
+                letter-spacing: 0.08em;
+            }
+            h1 {
+                margin-bottom: 40px;
+            }
+            .p2 {
+                margin-bottom: 60px;
+            }
+            div {
+                @include flex(flex-start, center);
+                .header-content-btn {
+                    padding: 18px 75px;
+                    background-color: $main-accent-color;
+                    box-shadow: 0px 15px 30px rgba($color: $main-accent-color, $alpha: 0.25);
+                    border-radius: 15px;
+                    margin-right: 75px;
+                    color: $bg-color;
+                    font-weight: 700;
+                    letter-spacing: 0.04em;
+                }
             }
         }
     }
+    
 }

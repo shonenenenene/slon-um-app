@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import Button from '../../../assets/UI/Button'
-import SvgSelector from '../../SvgSelector'
+import Button from '../../UI/Button'
+import SvgSelector from '../../UI/SvgSelector'
 import './Top.scss'
 
 const Top: FC = () => {
