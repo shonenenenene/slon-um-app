@@ -7,13 +7,124 @@
         position: relative;
         .girl {
             position: absolute;
-            bottom: -110px;
-            right: 11.4vw;
+            bottom: -17%;
+            right: 25%;
         }
         .planes {
             position: absolute;
             bottom: -110px;
             right: 530px;
         }
+        .plane {
+            position: absolute;
+            right: 3%;
+            top: 48%;
+            animation: opacity-changer 4s forwards;
+        }
+        .atom {
+            position: absolute;
+            left: 9%;
+            top: 19%;
+            animation: opacity-changer 4s forwards;
+        }
+        .ball {
+            position: absolute;
+            left: 42%;
+            top: 42%;
+            animation: opacity-changer 4s forwards;
+        }
+        .elephant {
+            position: absolute;
+            right: 19%;
+            top: 32%;
+            animation: opacity-changer 4s forwards;
+        }
+        .rocket {
+            position: absolute;
+            left: 10%;
+            bottom: 28%;
+            animation: opacity-changer 4s forwards;
+        }
+        .plus {
+            position: absolute;
+            right: 46%;
+            top: 34%;
+            animation: opacity-changer 4s forwards;
+        }
+        .planet3 {
+            position: absolute;
+            left: 37%;
+            bottom: 26%;
+            animation: opacity-changer 4s forwards;
+        }
+        .planet2 {
+            position: absolute;
+            right: 45%;
+            top: 20%;
+            animation: opacity-changer 4s forwards;
+        }
+        .planet1 {
+            position: absolute;
+            left: 24%;
+            top: 12%;
+            animation: opacity-changer 4s forwards;
+        }
+        .lamp {
+            position: absolute;
+            left: 54%;
+            bottom: 33%;
+            animation: opacity-changer 4s forwards;
+        }
+        .stars {
+            position: absolute;
+            right: 5%;
+            top: 2%;
+            animation: opacity-changer 4s forwards;
+        }
+        .divide {
+            position: absolute;
+            right: 37%;
+            top: 28%;
+            animation: opacity-changer 4s forwards;
+        }
+        .alarm {
+            position: absolute;
+            top: 31%;
+            left: 14%;
+            animation: opacity-changer 4s forwards;
+        }
+        .num-one {
+            position: absolute;
+            top: 31%;
+            right: 5%;
+            animation: opacity-changer 4s forwards;
+        }
+        .num-two {
+            position: absolute;
+            top: 40%;
+            right: 16%;
+            animation: opacity-changer 4s forwards;
+        }
+        .palette {
+            position: absolute;
+            top: 17%;
+            right: 9%;
+            animation: opacity-changer 4s forwards;
+        }
+        .space {
+            animation: opacity-changer 4s forwards;
+        }
+    }
+}
+
+@keyframes opacity-changer {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
