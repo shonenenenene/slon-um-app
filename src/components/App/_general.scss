@@ -6,10 +6,14 @@
 $titles-font: "Nunito", sans-serif;
 $common-font: "Rubik", sans-serif;
 
+
 $main-color: #1F1D2A;
+$additional-main-color: #4F5569;
+
 $main-accent-color: #14A76C;
 $additional-accent-color: #FF652F;
 $extra-accent-color: #E02D05;
+
 $bg-color: #FFFFFF;
 $buttons-color: $main-accent-color;
 
@@ -36,4 +40,40 @@ body {
 .wrapper {
     max-width: 1920px;
 }
+
+h1 {
+    font-family: $titles-font;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 122%;
+    color: $main-color;
+}
+
+h2 {
+    font-family: $titles-font;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: $main-color;
+}    
+
+.p1 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $main-color;
+}
+
+.p2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $additional-main-color;
+    text-align: start;
+}
+
 

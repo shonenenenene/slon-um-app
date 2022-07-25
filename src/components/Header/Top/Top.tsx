@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
-import './Top.scss'
+import Button from '../../../assets/UI/Button'
 import SvgSelector from '../../SvgSelector'
+import './Top.scss'
 
 const Top: FC = () => {
   
@@ -13,9 +14,7 @@ const Top: FC = () => {
           <span>УМ</span>
         </div>
       </div>
-      <button className='top-btn' type='button'>
-        Войти
-      </button>
+      <Button className='top-btn' content='Войти'/>
     </div>
   )
 }
