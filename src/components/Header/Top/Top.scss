@@ -26,7 +26,8 @@
         background-color: $additional-accent-color;
         color: white;
         border: 1px solid $additional-accent-color;
-        animation: color-changer 4s forwards;
+        animation: color-changer 1.5s forwards;
+        animation-delay: 1s;
     }
 
 }
@@ -36,11 +37,7 @@
         background-color: $additional-accent-color;
         color: white;
     }
-    70%{
-        background-color: $additional-accent-color;
-        color: white;
-        border: 1px solid $additional-accent-color;
-    }
+
     100%{
         background-color: white;
         color: $main-color;
