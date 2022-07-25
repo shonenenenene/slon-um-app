@@ -1,0 +1,27 @@
+@import "../../App/App.scss";
+
+.top {
+    @include flex(space-between, center);
+    min-height: 120px;
+    .top-logo {
+        @include flex(flex-start, center);
+        .logo-title {
+            span {
+                &:first-child {
+                    font-weight: 500;
+                    font-size: 34px;
+                }
+                &:last-child {
+                    font-size: 34px;
+                    color: $additional-accent-color;
+                }
+            }
+        }
+    }
+    .top-btn {
+        border: 1px solid $main-color;
+        border-radius: 15px;
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+}
