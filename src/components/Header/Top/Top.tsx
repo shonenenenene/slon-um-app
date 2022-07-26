@@ -1,7 +1,6 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 import Button from '../../UI/Button'
 import SvgSelector from '../../UI/SvgSelector'
-import Transition from 'react-transition-group/Transition';
 import './Top.scss'
 
 const Top: FC = () => {

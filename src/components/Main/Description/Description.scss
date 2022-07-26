@@ -1,0 +1,16 @@
+@import "../../App/App.scss";
+
+.description-container {
+    margin-bottom: 200px;
+    @include flex(center, center);
+    .description {
+        max-width: 790px;
+        .p-style-bold {
+            font-weight: 700;
+        }
+        .p-style-accent {
+            color: $main-accent-color;
+            font-weight: 700;
+        }
+    }
+}
