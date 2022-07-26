@@ -5,118 +5,151 @@
     z-index: -1;
     .header-animation-container {
         position: relative;
-        div {
+        .space {
             animation: opacity-changer 1.5s forwards;
-            opacity: 0;
-            animation-delay: 1s;
+            opacity: 0;            
+            animation-delay: 0.5s;
         }
         .girl {
             position: absolute;
             bottom: -17%;
             right: 25%;
-            opacity: 1 !important;
+            
+            
         }
         .planes {
             position: absolute;
             bottom: -110px;
             right: 530px;
-            opacity: 1 !important;
+            
         }
         .plane {
             position: absolute;
             right: 3%;
             top: 48%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;            
+            animation-delay: 0.5s;
         }
         .atom {
             position: absolute;
             left: 9%;
             top: 19%;
-            
+            animation: opacity-changer 1.5s forwards, atom-scale 12s linear infinite;
+            opacity: 0;            
+            animation-delay: 0.5s;          
         }
         .ball {
             position: absolute;
             left: 42%;
-            top: 42%;
-            
+            top: 37%;
+            animation: opacity-changer 1.5s forwards, ball-fly 8s ease-in-out infinite alternate;
+            opacity: 0; 
+            animation-delay: 0.5s;           
         }
         .elephant {
             position: absolute;
             right: 19%;
             top: 32%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;    
+            animation-delay: 0.5s;        
         }
         .rocket {
             position: absolute;
             left: 10%;
-            bottom: 28%;
-            
+            bottom: 26%;
+            animation: opacity-changer 1.5s forwards, rocket-fly 7s ease-out infinite alternate;
+            opacity: 0;  
+            animation-delay: 0.5s;          
         }
         .plus {
             position: absolute;
             right: 46%;
             top: 34%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;   
+            animation-delay: 0.5s;         
         }
         .planet3 {
             position: absolute;
             left: 37%;
             bottom: 26%;
-            
+            animation: opacity-changer 1.5s forwards, planet3-rotate 7s ease-in-out alternate infinite;
+            opacity: 0;   
+            animation-delay: 0.5s;         
         }
         .planet2 {
             position: absolute;
             right: 45%;
             top: 20%;
-            
+            animation: opacity-changer 1.5s forwards, planet2-fly 7s ease-in-out alternate infinite;
+            opacity: 0;   
+            animation-delay: 0.5s;         
         }
         .planet1 {
             position: absolute;
-            left: 24%;
+            left: 27%;
             top: 12%;
-           
+            animation: opacity-changer 1.5s forwards, planet1-fly 5s ease-in-out infinite alternate;
+            opacity: 0;    
+            animation-delay: 0.5s;        
         }
         .lamp {
             position: absolute;
             left: 54%;
             bottom: 33%;
-            
+            animation: opacity-changer 1.5s forwards, lamp-rotate 10s ease-in-out infinite alternate;
+            opacity: 0;     
+            animation-delay: 0.5s;       
         }
         .stars {
             position: absolute;
             right: 5%;
             top: 2%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;   
+            animation-delay: 0.5s;         
         }
         .divide {
             position: absolute;
             right: 37%;
             top: 28%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;      
+            animation-delay: 0.5s;      
         }
         .alarm {
             position: absolute;
             top: 31%;
             left: 14%;
-            
+            animation: opacity-changer 1.5s forwards, alarm-rotate linear 12s infinite none;
+            opacity: 0;  
+            animation-delay: 0.5s;          
         }
         .num-one {
             position: absolute;
             top: 31%;
             right: 5%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;  
+            animation-delay: 0.5s;          
         }
         .num-two {
             position: absolute;
             top: 40%;
             right: 16%;
-            
+            animation: opacity-changer 1.5s forwards;
+            opacity: 0;   
+            animation-delay: 0.5s;         
         }
         .palette {
             position: absolute;
             top: 17%;
             right: 9%;
-            
+            opacity: 0;
+            animation: opacity-changer 1.5s forwards;
+            animation-delay: 0.5s;
         }
 
     }
@@ -129,5 +162,104 @@
     
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes rocket-fly {
+    0% {
+        transform: translate(0,0);
+    }
+    40% {
+        transform: translate(0,-30px);
+    }
+    100%{
+        transform: translate(0,-40px);
+    }
+}
+
+@keyframes alarm-rotate {
+    0% {
+        transform: rotate(0) scale(0.6, 0.6);
+    }
+    25% {
+        transform: rotate(-130deg) scale(0.8, 0.8);
+    }
+    50% {
+        transform: rotate(-240deg) scale(1, 1);
+    }
+    75% {
+        transform: rotate(-320deg) scale(0.7, 0.7);
+    }
+    100%{
+        transform: rotate(-360deg) scale(0.6, 0.6);
+    }
+}
+
+@keyframes atom-scale {
+    0% {
+        transform: rotate(0) scale(0, 0);
+    }
+    25%{
+        transform: rotate(60deg) scale(0.8, 0.8);
+    }
+    50% {
+        transform: rotate(80deg) scale(1, 1);
+    }
+    75% {
+        transform: rotate(90deg) scale(0.8, 0.8);
+    }
+    100%{
+        transform: rotate(130deg) scale(0, 0);
+    }
+}
+
+@keyframes planet1-fly {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50px, 15px);
+    }
+}
+
+@keyframes ball-fly {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 60px);
+    }
+}
+
+@keyframes planet2-fly {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(40px, 0);
+    }
+}
+
+@keyframes planet3-rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(25deg);
+    }   
+}
+
+@keyframes lamp-rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    75%{
+        transform: rotate(-50deg);
+    }
+    100%{
+        transform: rotate(-70deg);
     }
 }
