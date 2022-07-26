@@ -1,0 +1,9 @@
+@import "../../App/App.scss";
+
+.benefits-card {
+    @include flex(flex-start, center);
+    padding: 25px 35px;
+    max-width: 445px;
+    box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+    border-radius: 16px;
+}

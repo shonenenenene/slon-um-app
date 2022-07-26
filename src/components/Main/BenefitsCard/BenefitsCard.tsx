@@ -3,13 +3,13 @@ import { IBenefitsCard } from '../../../types'
 import SvgSelector from '../../UI/SvgSelector'
 import './BenefitsCard.scss'
 
-const BenefitsCard: FC<IBenefitsCard> = ({id, content }) => {
+const BenefitsCard: FC<IBenefitsCard> = ({ src, content }) => {
   return (
       <div className='benefits-card'>
           <div className='benefits-card-img'>
-              <SvgSelector id={id} />
-              <p className='p2'>{ content }</p>
+              <img src={src} />
           </div>
+          <p className='p2'>{ content }</p>
       </div>
   )
 }

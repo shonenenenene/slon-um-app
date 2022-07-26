@@ -8,6 +8,8 @@ export interface IButton {
     content: string
 }
 
-export interface IBenefitsCard extends ISvgProps{
+export interface IBenefitsCard {
+    src: string
     content: string
+    className?: string
 }
