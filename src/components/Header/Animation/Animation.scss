@@ -27,7 +27,7 @@
             position: absolute;
             right: 3%;
             top: 48%;
-            animation: opacity-changer 1.5s forwards;
+            animation: opacity-changer 1.5s forwards, plane-rotate 7s ease-in-out infinite alternate;
             opacity: 0;            
             animation-delay: 0.5s;
         }
@@ -41,7 +41,7 @@
         }
         .ball {
             position: absolute;
-            left: 42%;
+            left: 40%;
             top: 37%;
             animation: opacity-changer 1.5s forwards, ball-fly 8s ease-in-out infinite alternate;
             opacity: 0; 
@@ -51,7 +51,7 @@
             position: absolute;
             right: 19%;
             top: 32%;
-            animation: opacity-changer 1.5s forwards;
+            animation: opacity-changer 1.5s forwards, elephant-rotate 6s ease-in-out infinite alternate;
             opacity: 0;    
             animation-delay: 0.5s;        
         }
@@ -67,7 +67,7 @@
             position: absolute;
             right: 46%;
             top: 34%;
-            animation: opacity-changer 1.5s forwards;
+            animation: opacity-changer 1.5s forwards, plus-scale 12s ease-in-out infinite;
             opacity: 0;   
             animation-delay: 0.5s;         
         }
@@ -115,7 +115,7 @@
             position: absolute;
             right: 37%;
             top: 28%;
-            animation: opacity-changer 1.5s forwards;
+            animation: opacity-changer 1.5s forwards, divide-scale 10s ease-in-out infinite alternate;
             opacity: 0;      
             animation-delay: 0.5s;      
         }
@@ -148,7 +148,7 @@
             top: 17%;
             right: 9%;
             opacity: 0;
-            animation: opacity-changer 1.5s forwards;
+            animation: opacity-changer 1.5s forwards, palette-rotate 10s infinite ease-in-out;
             animation-delay: 0.5s;
         }
 
@@ -179,37 +179,37 @@
 
 @keyframes alarm-rotate {
     0% {
-        transform: rotate(0) scale(0.6, 0.6);
+        transform: rotate(0) scale(0.6);
     }
     25% {
-        transform: rotate(-130deg) scale(0.8, 0.8);
+        transform: rotate(-130deg) scale(0.8);
     }
     50% {
-        transform: rotate(-240deg) scale(1, 1);
+        transform: rotate(-240deg) scale(1);
     }
     75% {
-        transform: rotate(-320deg) scale(0.7, 0.7);
+        transform: rotate(-320deg) scale(0.7);
     }
     100%{
-        transform: rotate(-360deg) scale(0.6, 0.6);
+        transform: rotate(-360deg) scale(0.6);
     }
 }
 
 @keyframes atom-scale {
     0% {
-        transform: rotate(0) scale(0, 0);
+        transform: rotate(0) scale(0);
     }
     25%{
-        transform: rotate(60deg) scale(0.8, 0.8);
+        transform: rotate(60deg) scale(0.8);
     }
     50% {
-        transform: rotate(80deg) scale(1, 1);
+        transform: rotate(80deg) scale(1);
     }
     75% {
-        transform: rotate(90deg) scale(0.8, 0.8);
+        transform: rotate(90deg) scale(0.8);
     }
     100%{
-        transform: rotate(130deg) scale(0, 0);
+        transform: rotate(130deg) scale(0);
     }
 }
 
@@ -261,5 +261,77 @@
     }
     100%{
         transform: rotate(-70deg);
+    }
+}
+
+@keyframes elephant-rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(30deg);
+    } 
+}
+
+@keyframes palette-rotate {
+    0%{
+        transform: rotate(0);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    70% {
+        transform: rotate(350deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes divide-scale {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes plus-scale {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    30%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes plane-rotate {
+    0%{
+        transform: scale(0.4) rotate(30deg);
+
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
     }
 }
