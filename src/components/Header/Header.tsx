@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Top from './Top/Top';
 import Button from '../UI/Button';
 import Timer from '../UI/Timer';
-import Animation from './Animation/Animation';
+import Animation from '../UI/HeaderAnimation/HeaderAnimation';
 import './Header.scss'
 
 

@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
-import BenefitsCard from '../BenefitsCard/BenefitsCard'
+import BenefitsCard from '../UI/BenefitsCard/BenefitsCard'
 import './Benefits.scss'
 
 const Benefits:FC = () => {
   return (
       <section className='benefits'>
           <div className='benefits-container container'>
-              <h2>Для чего нужно участвовать</h2>
+              <h2>Для чего <span>нужно</span> участвовать</h2>
                 <div className='benefits-cards'>
                     <BenefitsCard src='./img/star.png' content='Шанс занять 1 место. В вашем городе и по всей России' />
                     <BenefitsCard src='./img/winnie.png' content='Развитие самостоятельности + свободное время для      родителей ;)' />

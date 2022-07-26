@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import SvgSelector from '../../UI/SvgSelector'
-import './Animation.scss'
+import SvgSelector from '../SvgSelector'
+import './HeaderAnimation.scss'
 
 const Animation:FC = () => {
   return (

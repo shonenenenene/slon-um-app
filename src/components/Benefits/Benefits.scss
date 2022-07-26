@@ -1,0 +1,28 @@
+@import "../App/App.scss";
+
+.benefits {
+    margin-bottom: 200px;
+    .benefits-container {
+        h2 {
+            margin-bottom: 58px;
+            span {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../../../public/img/underline.svg);
+                    width: 105px;
+                    height: 10px;
+                    bottom: -7px;
+                    left: -2px;
+                }
+            }
+
+        }
+        .benefits-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+    }
+}

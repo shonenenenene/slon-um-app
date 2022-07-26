@@ -12,6 +12,7 @@ $additional-main-color: #4F5569;
 
 $main-accent-color: #14A76C;
 $additional-accent-color: #FF652F;
+$additional-accent-color-lite: #FF946E;
 $extra-accent-color: #E02D05;
 
 $bg-color: #FFFFFF;
@@ -77,4 +78,7 @@ h2 {
     text-align: start;
 }
 
+a {
+    color: $additional-accent-color-lite;
+}
 
