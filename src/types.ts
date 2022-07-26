@@ -7,3 +7,7 @@ export interface IButton {
     className: string
     content: string
 }
+
+export interface IBenefitsCard extends ISvgProps{
+    content: string
+}
