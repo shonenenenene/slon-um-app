@@ -3,6 +3,7 @@ import Description from '../Description/Description'
 import Benefits from '../Benefits/Benefits'
 import Plan from '../Plan/Plan'
 import Certificate from '../Certificate/Certificate'
+import Entry from '../Entry/Entry'
 
 const Main: FC = () => {
   return (
@@ -10,7 +11,8 @@ const Main: FC = () => {
         <Description />
         <Benefits />
         <Plan />
-        <Certificate/>
+        <Certificate />
+        <Entry/>
       </main>
   )
 }

@@ -1,6 +1,9 @@
 @import "../App/App.scss";
 .certificate {
     padding-bottom: 200px;
+    background-image: url("../../../public/img/waves.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
     .certificate-container {
         @include flex(space-between, center);
         .certificate-description {

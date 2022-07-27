@@ -1,7 +1,9 @@
 @import "../App/App.scss";
 
 .benefits {
-    margin-bottom: 170px;
+    padding-bottom: 170px;
+    background-image: url("../../../public/img/waves.svg");
+    background-repeat: no-repeat;
     .benefits-container {
         h2 {
             margin-bottom: 58px;
@@ -10,7 +12,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    background-image: url(../../../public/img/underline.svg);
+                    background-image: url("../../../public/img/underline.svg");
                     width: 105px;
                     height: 10px;
                     bottom: -7px;
