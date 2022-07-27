@@ -15,3 +15,14 @@ export interface IBenefitsCard {
     content: ReactNode
     className?: string
 }
+
+export interface IInput {
+    className: string
+    type: string
+    placeholder: string
+}
+
+export interface ICheckbox {
+    className: string
+    content: ReactNode
+}

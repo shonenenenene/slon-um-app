@@ -10,7 +10,7 @@ const Entry = () => {
               <div className='entry-registration-inputs'>
                   
               </div>
-              <div className='entry-registration-toggle'>
+              <div className='entry-registration-checkbox'>
 
               </div>
               <Button className='entry-registration-btn' content='Участвовать'/>
