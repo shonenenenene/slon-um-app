@@ -1,0 +1,144 @@
+@import "../App/App.scss";
+
+.plan {
+    background-image: url(../../../public/img/sky.svg);
+    padding-bottom: 220px;
+    padding-top: 30px;
+    .plan-container {
+        position: relative;
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            a {
+                color: $main-accent-color;
+                text-decoration: underline;
+            }
+        }
+        .flying-plane {
+            position: absolute;
+            left: -500px;
+            z-index: 2;
+            animation: flying-plane 3s linear;
+            animation-delay: 0.5s;
+        }
+        .plan-step-1 {
+            position: absolute;
+            top: 18%;
+            left: 3%;
+            .p2 {
+                opacity: 0;
+                position: absolute;
+                left: 110px;
+                top: -10px;
+                animation: p-appear 0.5s linear forwards;
+                animation-delay: 1s;
+            }
+        }
+        .plan-step-2 {
+            position: absolute;
+            top: 51%;
+            left: 36%;
+            .p2 {
+                opacity: 0;
+                width: 240px;
+                position: absolute;
+                left: 110px;
+                top: -10px;
+                animation: p-appear 0.5s linear forwards;
+                animation-delay: 2s;
+            }
+        }
+        .plan-step-3 {
+
+            position: absolute;
+            bottom: 0;
+            left: 67%;
+            .p2 {
+                opacity: 0;
+                width: 270px;
+                position: absolute;
+                left: 110px;
+                top: -15px;
+                animation: p-appear 0.5s linear forwards;
+                animation-delay: 3s;
+            }
+        }
+        .circle {
+            border-radius: 50%;
+            background-color: $additional-accent-color;
+            width: 80px;
+            height: 80px;
+            @include flex (center, center);
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            color: $bg-color;
+        }
+        h2 {
+            margin-bottom: 100px;
+            span {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../../../public/img/underline2.svg);
+                    width: 84px;
+                    height: 10px;
+                    bottom: -7px;
+                    left: -2px;
+                } 
+            }
+        }
+        .plan-dashed-line {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 90px;
+        }
+    }
+}
+
+@keyframes flying-plane {
+    0%{
+        transform: scale(-1, 1) rotate(0deg);
+        top: 0;
+        left: -30%;
+    }
+    20%{
+        transform: scale(-1, 1) rotate(-10deg);
+        top: 14%;
+        left: 3%;
+    }
+    50%{
+        transform: scale(-1, 1) rotate(-30deg);
+        top: 51%;
+        left: 36%;
+    }
+    80%{
+        transform: scale(-1, 1) rotate(0deg);
+        top: 85%;
+        left: 67%;
+    }
+    90%{
+        transform: scale(-1, 1) rotate(20deg);
+        top: 90%;
+        left: 82%;
+    }
+    100%{
+        transform: scale(-1, 1) rotate(30deg);
+        top: 85%;
+        left: 100%;
+    }
+}
+
+@keyframes p-appear {
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

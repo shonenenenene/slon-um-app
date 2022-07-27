@@ -11,10 +11,7 @@ const BenefitsCard: FC<IBenefitsCard> = ({ src, content }) => {
           <div className='benefits-card-img'>
               <img src={src} />
           </div>
-        {(content.includes('Подписывайтесь!')) ?
-            <p className='p2'>Публикация работ победителей во ВКонтакте. <a href='' target='_blank'>Подписывайтесь!</a></p> :
-            <p className='p2'>{content}</p>
-        }
+          <p className='p2'>{content}</p>
       </div>
   )
 }
