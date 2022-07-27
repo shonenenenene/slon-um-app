@@ -1,0 +1,31 @@
+@import "../App/App.scss";
+.certificate {
+    padding-bottom: 200px;
+    .certificate-container {
+        @include flex(space-between, center);
+        .certificate-description {
+            max-width: 500px;
+            h2 {
+                margin-bottom: 27px;
+                span {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background-image: url(../../../public/img/underline3.svg);
+                        width: 150px;
+                        height: 10px;
+                        bottom: -7px;
+                        left: -2px;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 27px;
+            }
+        }
+        .certificate-document {
+            max-width: 680px;
+        }
+    }
+}
