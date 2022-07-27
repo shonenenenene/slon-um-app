@@ -20,6 +20,9 @@
             position: absolute;
             left: -500px;
             z-index: 2;
+
+        }
+        .flying-plane-animation {
             animation: flying-plane 3s linear;
             animation-delay: 0.5s;
         }
@@ -32,6 +35,8 @@
                 position: absolute;
                 left: 110px;
                 top: -10px;
+            }
+            .step-1-animation {
                 animation: p-appear 0.5s linear forwards;
                 animation-delay: 1s;
             }
@@ -46,12 +51,13 @@
                 position: absolute;
                 left: 110px;
                 top: -10px;
+            }
+            .step-2-animation {
                 animation: p-appear 0.5s linear forwards;
                 animation-delay: 2s;
             }
         }
         .plan-step-3 {
-
             position: absolute;
             bottom: 0;
             left: 67%;
@@ -61,6 +67,8 @@
                 position: absolute;
                 left: 110px;
                 top: -15px;
+            }
+            .step-3-animation {
                 animation: p-appear 0.5s linear forwards;
                 animation-delay: 3s;
             }

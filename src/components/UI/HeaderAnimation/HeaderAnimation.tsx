@@ -1,10 +1,20 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import SvgSelector from '../SvgSelector'
 import './HeaderAnimation.scss'
 
-const Animation:FC = () => {
+const Animation: FC = () => {
+    
+    const [isLoaded, setIsLoaded] = useState(false)
+
+    useEffect(() => {
+        setIsLoaded(true)
+    },[])
+
   return (
-      <div className='header-animation'>
+      <div className={
+            isLoaded ?
+            'header-animation' :
+            'header-animation-none'}>
           <div className='header-animation-container'>
             <div className='space'>
                 <img src='./img/header-space.png' alt='Космос' />
