@@ -1,0 +1,158 @@
+@import "../App/App.scss";
+
+.entry {
+    margin-bottom: 220px;
+    @include flex(space-between, center);
+    .entry-sale {
+        position: relative;
+        width: 490px;
+        height: 476px;
+        border: 3px solid $main-accent-color;
+        box-shadow: 0px 5px 15px rgba($color: $main-accent-color, $alpha: 0.2);
+        border-radius: 40px;
+        background: linear-gradient(to top, $main-accent-color 15%, transparent 15%);
+        .entry-sale-p1, .entry-sale-p2 {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+        }
+        .entry-sale-p1 {
+            position: absolute;
+            left: 11%;
+            top: 30%;
+        }
+        .entry-sale-p2 {
+            position: absolute;
+            left: 11%;
+            bottom: 25%;
+        }
+        .entry-sale-title1, .entry-sale-title2 {
+            color: $bg-color;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0.04em;
+        }
+        .entry-sale-title1 {
+            position: absolute;
+            top: 1%;
+            left: 30%;
+        }
+        .entry-sale-price {
+            position: absolute;
+            top: 40%;
+            left: 11%;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 114px;
+            &::after {
+                content: '299₽';
+                text-decoration: line-through;
+                width: 81px;
+                height: 36px;
+                font-size: 30px;
+                font-weight: 500;
+                position: absolute;
+                top: -20%;
+                right: -45%;
+            }
+        }
+        .entry-sale-footer {
+            width: 100%;
+            padding-right: 90px;
+            position: absolute;
+            @include flex(space-between, center);
+            bottom: 3%;
+            left: 11%;
+            .entry-sale-links {
+               a {
+                margin-right: 15px;
+               }
+            }
+        }
+        svg {
+            position: absolute;
+            left: 20%;
+            top: -18px;
+            z-index: -1;
+            max-width: 292px !important;
+            path {
+                fill: $main-accent-color, black;
+                &:last-child {
+                    fill: $main-accent-color;
+                }
+            }
+        }
+    }
+    .entry-registration {
+        max-width: 660px;
+        h2 {
+            margin-bottom: 50px;
+        }
+        .entry-registration-inputs {
+            & > * {
+                max-width: 540px;
+                height: 60px;
+                margin-bottom: 20px;
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #9FA0A7;
+                    border-radius: 15px;
+                    padding-left: 20px;
+                    color: $additional-main-color;
+                }
+            }
+        }
+        .entry-registration-checkbox {
+            margin: 50px 0;
+            @include flex(flex-start, center);
+            input {
+                display: none;
+            }
+            .custom-checkbox {
+                height: 18px;
+                width: 18px;
+                border: 2px solid $main-accent-color;
+                display: inline-block;
+                position: relative;
+                background-color: $bg-color;
+                border-radius: 5px;
+                padding: 3px;
+                margin-right: 17px;
+            }
+                [type=checkbox]:checked + .custom-checkbox:before { 
+                content: '\2714';
+                position: absolute;
+                top: -4px;
+                left: 0.5px;
+                font-size: 15px;
+                color: $bg-color;
+                }
+                [type=checkbox]:checked + .custom-checkbox {
+                    background-color: $main-accent-color;
+                }
+            .label {
+                color: $checkbox-color;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                a {
+                    color: $main-accent-color;
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+            } 
+        }
+        .entry-registration-btn {
+            background-color: $extra-accent-color;
+            box-shadow: 0px 15px 30px rgba($color: $extra-accent-color, $alpha: 0.25);
+            border-radius: 15px;
+            color: $bg-color;
+            padding: 19px 73px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+    }
+}

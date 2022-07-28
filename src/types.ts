@@ -17,12 +17,11 @@ export interface IBenefitsCard {
 }
 
 export interface IInput {
-    className: string
-    type: string
+    className?: string
+    type?: string
     placeholder: string
 }
 
 export interface ICheckbox {
     className: string
-    content: ReactNode
 }
