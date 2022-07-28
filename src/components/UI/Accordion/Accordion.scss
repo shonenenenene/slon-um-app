@@ -1,0 +1,56 @@
+@import "../../App/App.scss";
+
+.accordion {
+    border: 1px solid $main-color;
+    border-left: none;
+    border-right: none;
+    margin-bottom: -1px;
+    .accordion-interface {
+        @include flex (space-between, center);
+        height: 110px;
+        .p2 {
+            font-size: 20px;
+            letter-spacing: 0.04em;
+        }
+        .accordion-btn {
+            color: $bg-color;
+            @include flex (center, center);
+            padding-bottom: 2px;
+            border-radius: 50%;
+            background-color: $additional-accent-color;
+            font-size: 38px;
+            font-weight: 300;
+            width: 48px;
+            height: 48px;
+        }
+        .btn-animation-forward {
+            animation: btn-animation-forward 0.5s forwards;
+        }
+        .btn-animation-backward{
+            animation: btn-animation-backward 0.5s forwards;
+        }
+    }
+    .accordion-content {
+        padding-right: 50px;
+        margin-bottom: 40px;
+        transition: 0.1s;
+    }
+}
+
+@keyframes btn-animation-forward {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes btn-animation-backward {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}

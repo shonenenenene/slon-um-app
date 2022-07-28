@@ -8,6 +8,7 @@ export interface ISvgProps {
 export interface IButton {
     className: string
     content: string
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 export interface IBenefitsCard {
@@ -24,4 +25,10 @@ export interface IInput {
 
 export interface ICheckbox {
     className: string
+}
+
+export interface IAccordion {
+    className?: string
+    title: string
+    content: string
 }

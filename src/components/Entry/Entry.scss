@@ -74,7 +74,6 @@
             left: 20%;
             top: -18px;
             z-index: -1;
-            max-width: 292px !important;
             path {
                 fill: $main-accent-color, black;
                 &:last-child {
@@ -153,6 +152,15 @@
             line-height: 24px;
             text-align: center;
             letter-spacing: 0.04em;
+        }
+    }
+}
+
+@media (max-width: 1179px) {
+    .entry {
+        @include flex(center, center);
+        .entry-sale {
+            margin-bottom: 100px;
         }
     }
 }
