@@ -339,3 +339,9 @@
         transform: scale(1) rotate(0deg);
     }
 }
+
+@media (max-width: 870px) {
+    .header-animation {
+        display: none;
+    }
+}

@@ -32,3 +32,17 @@
         }
     }
 }
+
+@media (max-width: 1250px) {
+    .certificate-container {
+        justify-content: center !important;
+        flex-direction: column;
+        .certificate-description {
+            .p2 {
+                text-align: center !important;
+            }
+            margin-bottom: 50px !important;
+        }
+
+    }
+}

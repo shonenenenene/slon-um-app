@@ -28,3 +28,10 @@
         }
     }
 }
+
+@media (max-width: 810px) {
+    .benefits-cards {
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+}

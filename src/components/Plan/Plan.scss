@@ -150,3 +150,54 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 810px) {
+    .plan {
+        padding-bottom: 100px !important;
+    }
+    .plan-container {
+        .plan-dashed-line {
+            display: none !important;
+        }
+        .flying-plane {
+            display: none !important;
+        }
+        display: flex !important;
+        justify-content: center !important;
+        align-self: center !important;
+        flex-direction: column;
+        .plan-step-1 {
+            position: static !important;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            .p2 {
+                position: static !important;
+                margin-left: 40px;
+            }
+        }
+        .plan-step-2 {
+            position: static !important;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            .p2 {
+                position: static !important;
+                margin-left: 40px;
+            }
+        }
+        .plan-step-3 {
+            position: static !important;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            .p2 {
+                position: static !important;
+                margin-left: 40px;
+            }
+        }
+    }
+}

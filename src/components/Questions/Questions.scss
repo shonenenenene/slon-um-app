@@ -6,3 +6,16 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 620px) {
+    .questions-accordion {
+        .accordion-interface {
+            flex-direction: column !important;
+            padding-bottom: 15px !important;
+        }
+        .accordion-content {
+            text-align: center !important;
+            padding-right: 0 !important;
+        }
+    }
+}

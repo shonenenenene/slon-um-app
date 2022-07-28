@@ -1,0 +1,61 @@
+@import "../App/App.scss";
+
+.footer {
+    margin-top: 100px;
+    .footer-panel {
+        @include flex(space-between, center);
+        .socials {
+            a {
+                margin-right: 22px;
+            }
+        }
+        .footer-nav {
+            a {
+                font-family: $titles-font;
+                color: $main-color;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                margin-right: 40px;
+            }
+        }
+        .up-btn {
+            border-radius: 50%;
+            background-color: $additional-accent-color;
+            width: 56px;
+            height: 56px;
+            color: $bg-color;
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 4px;
+            filter: drop-shadow(0px 15px 30px rgba($color: $additional-accent-color, $alpha: 0.25));
+        }
+    }
+    .footer-bottom {
+        padding-bottom: 64px;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .footer-panel {
+        @include flex(center, center);
+        flex-direction: column;
+        & > * {
+            margin-bottom: 80px;
+        }
+    }
+    .footer-nav {
+        @include flex(center, center);
+        flex-direction: column;
+        & > * {
+            margin-bottom: 30px;
+            margin-right: 0 !important;
+        }
+    }
+}
