@@ -32,3 +32,7 @@ export interface IAccordion {
     title: string
     content: string
 }
+
+export interface ITimer {
+    className?: string
+}

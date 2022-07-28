@@ -1,7 +1,8 @@
 import React, { FC, useEffect, useState } from 'react'
+import { ITimer } from '../../../types';
 import './Timer.scss'
 
-const Timer: FC = () => {
+const Timer: FC<ITimer> = ({className}) => {
   
   const [minutes, setMinutes] = useState(43);
 
@@ -15,7 +16,7 @@ const Timer: FC = () => {
   })
 
   return (
-    <div className='timer'>
+    <div className={`timer ${className}`}>
       <div className='num days'>01</div>
       <div className='colon'>:</div>
       <div className='num hours'>09</div>
