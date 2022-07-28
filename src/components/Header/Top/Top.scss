@@ -28,6 +28,11 @@
         border: 1px solid $additional-accent-color;
         animation: color-changer 1.5s forwards;
         animation-delay: 0.5s;
+        &:hover {
+            box-shadow: 0px 15px 30px rgba($color: $additional-accent-color, $alpha: 0.3);
+            border: 1px solid rgba($color: $additional-accent-color, $alpha: 0.3) !important;
+            color: $additional-accent-color !important;
+        }
     }
 
 }

@@ -31,6 +31,10 @@
                     color: $bg-color;
                     font-weight: 700;
                     letter-spacing: 0.04em;
+                    transition: 0.3s;
+                    &:hover {
+                        box-shadow: 0px 15px 30px rgba($color: $main-accent-color, $alpha: 0.7);
+                    }
                 }
             }
         }
