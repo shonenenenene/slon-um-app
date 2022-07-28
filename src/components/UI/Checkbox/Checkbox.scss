@@ -1,0 +1,45 @@
+@import "../../App/App.scss";
+
+
+.checkbox-container {
+    @include flex(flex-start, center);
+    flex-wrap: nowrap;
+    input {
+        display: none;
+    }
+    .custom-checkbox {
+        height: 18px;
+        width: 18px;
+        border: 2px solid $main-accent-color;
+        display: inline-block;
+        position: relative;
+        background-color: $bg-color;
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 17px;
+    }
+        [type=checkbox]:checked + .custom-checkbox:before { 
+        content: '\2714';
+        position: absolute;
+        top: -4px;
+        left: 0.5px;
+        font-size: 15px;
+        color: $bg-color;
+        }
+        [type=checkbox]:checked + .custom-checkbox {
+            background-color: $main-accent-color;
+        }
+    .label {
+        color: $checkbox-color;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        a {
+            color: $main-accent-color;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    } 
+}
+
+    

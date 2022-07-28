@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../UI/Button'
-import Checkbox from '../UI/Checkbox'
+import Checkbox from '../UI/Checkbox/Checkbox'
 import Input from '../UI/Input'
 import './Entry.scss'
 

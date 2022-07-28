@@ -13,7 +13,7 @@ const Benefits:FC = () => {
                     <BenefitsCard src='./img/certification.png' content='Персональный диплом в разных номинациях    каждому участнику' />
                     <BenefitsCard src='./img/gift.png' content='Призы и скидки для подписчиков и авторизованных     пользователей' />
                     <BenefitsCard src='./img/email.png' content='Бесплатный диплом на email — через 1 день после конкурса' />
-                    <BenefitsCard src='./img/publishing.png' content={<>Публикация работ победителей во ВКонтакте. <a>Подписывайтесь!</a></>} />
+                    <BenefitsCard src='./img/publishing.png' content={<>Публикация работ победителей во ВКонтакте. <a href='' target='_blank'>Подписывайтесь!</a></>} />
               </div>
           </div> 
       </section>

@@ -5,6 +5,7 @@ import Plan from '../Plan/Plan'
 import Certificate from '../Certificate/Certificate'
 import Entry from '../Entry/Entry'
 import Questions from '../Questions/Questions'
+import Subscribe from '../Subscribe/Subscribe'
 
 const Main: FC = () => {
   return (
@@ -14,7 +15,8 @@ const Main: FC = () => {
         <Plan />
         <Certificate />
         <Entry />
-        <Questions/>
+        <Questions />
+        <Subscribe/>
       </main>
   )
 }

@@ -1,0 +1,82 @@
+@import "../App/App.scss";
+
+.subscribe {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../../../public/img/subscribe-background.png');
+    background-repeat: no-repeat;
+    background-attachment:local;
+    padding-bottom: 50px;
+    border-radius: 81px;
+    h2 {
+        color: white;
+        padding: 30px 0 20px;
+    }
+    .subscribe-p {
+        color: white;
+        max-width: 406px;
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+    div {
+        display: flex;
+        margin-bottom: 20px;
+        .subscribe-input {
+            height: 60px;
+            margin-left: 20%;
+            margin-right: 3%;
+            flex-basis: 540px;
+            input {
+                width: 100%;
+                height: 100%;
+                border: 1px solid $checkbox-color;
+                border-radius: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }  
+        }
+        .subscribe-btn {
+            flex-basis: 360px;
+            color: $bg-color;
+            background-color: $main-accent-color;
+            border-radius: 15px;
+            height: 60px;
+            margin-right: 20%;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+    }
+    .subscribe-checkbox {
+        margin-left: 20%;
+        margin-right: 2%;
+        a {
+            color: white;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .subscribe-checkbox {
+        margin-left: 10% !important;
+    }
+    .subscribe-btn {
+        height: 40px !important;
+    }
+    .subscribe-input {
+        height: 40px !important;
+        margin-left: 10% !important;
+    }
+    .subscribe {
+        h2 {
+            margin-bottom: 10px !important;
+        }
+        .p2 {
+            margin-bottom: 10px !important;
+        }
+        div {
+            margin-bottom: 10px !important;
+        }
+    }
+}
