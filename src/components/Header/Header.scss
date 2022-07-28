@@ -22,6 +22,7 @@
             }
             div {
                 @include flex(flex-start, center);
+                flex-wrap: nowrap;
                 .header-content-btn {
                     padding: 18px 75px;
                     background-color: $main-accent-color;

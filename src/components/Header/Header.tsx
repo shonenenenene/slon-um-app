@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Top from './Top/Top';
 import Button from '../UI/Button';
-import Timer from '../UI/Timer';
+import Timer from '../UI/Timer/Timer';
 import Animation from '../UI/HeaderAnimation/HeaderAnimation';
 import './Header.scss'
 
