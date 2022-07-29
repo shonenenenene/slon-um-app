@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react'
 export interface ISvgProps {
     id: string
     className?: string
+    alt?: string
 }
 
 export interface IButton {
@@ -15,6 +16,7 @@ export interface IBenefitsCard {
     src: string
     content: ReactNode
     className?: string
+    alt?: string
 }
 
 export interface IInput {

@@ -20,8 +20,8 @@ const Entry = () => {
                 <div className='entry-sale-footer'>
                     <div className='entry-sale-title2'>Получить скидку:</div>
                     <div className='entry-sale-links'>
-                        <a href='' target='_blank'><img src='./icons/vk.svg'/></a>
-                        <a href='' target='_blank'><img src='./icons/ok.svg'/></a>
+                        <a href='' target='_blank'><img src='./icons/vk.svg' alt='vk'/></a>
+                        <a href='' target='_blank'><img src='./icons/ok.svg' alt='ok'/></a>
                     </div>
                 </div>
           </div>

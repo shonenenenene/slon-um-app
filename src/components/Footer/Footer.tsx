@@ -16,9 +16,9 @@ const Footer = () => {
       <footer className='footer container'>
           <div className='footer-panel'>
               <div className='socials'>
-                  <a href='' target='_blank'><img src='./icons/telegram.svg' /></a>
-                  <a href='' target='_blank'><img src='./icons/idk.svg' /></a>
-                  <a href='' target='_blank'><img src='./icons/footer-vk.svg'/></a>
+                  <a href='' target='_blank'><img src='./icons/telegram.svg' alt='telegram'/></a>
+                  <a href='' target='_blank'><img src='./icons/idk.svg' alt='idk'/></a>
+                  <a href='' target='_blank'><img src='./icons/footer-vk.svg' alt='vk'/></a>
               </div>
               <nav className='footer-nav'>
                 <a href='' target='_blank'>Главная</a>

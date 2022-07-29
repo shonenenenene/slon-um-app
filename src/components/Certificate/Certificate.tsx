@@ -12,7 +12,7 @@ const Certificate: FC = () => {
                   <p className='p2'>Со слоном к победам напролом!</p>
               </div>
               <div className='certificate-document'>
-                  <img src='./img/certificate-document.png'/>
+                  <img src='./img/certificate-document.png' alt='диплом'/>
               </div>
           </div>
       </section>

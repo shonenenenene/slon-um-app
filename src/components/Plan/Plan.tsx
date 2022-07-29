@@ -11,10 +11,10 @@ const Plan: FC = () => {
         <div className='plan-container container'>
           <h2>Пошаговый <span>план</span></h2>
           <div className={ inView ? 'flying-plane flying-plane-animation' : 'flying-plane' }>
-            <img src='./img/flying-plane.svg'/>
+            <img src='./img/flying-plane.svg' alt='самолетик'/>
           </div>
           <div className='plan-dashed-line'>
-            <img src='./img/dashed-line.svg' />
+            <img src='./img/dashed-line.svg' alt='подчеркивание'/>
           </div>
           <div className='plan-step-1'>
             <div className='circle'>1</div>
