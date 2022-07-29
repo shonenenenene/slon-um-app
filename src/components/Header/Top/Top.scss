@@ -5,6 +5,25 @@
     min-height: 110px;
     .top-logo {
         @include flex(flex-start, center);
+        .top-logo-img {
+            path {
+                &:nth-child(1) {
+                    fill: $additional-accent-color;
+                }
+                &:nth-child(2) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(3) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(4) {
+                    fill: $main-accent-color;
+                }
+                &:nth-child(5) {
+                    fill: $main-accent-color;
+                }
+            }
+        }
         .logo-title {
             margin-left: 5px;
             span {
