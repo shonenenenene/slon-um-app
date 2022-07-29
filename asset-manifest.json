@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/slon-um-app/static/css/main.2b95d73f.css",
+    "main.js": "/slon-um-app/static/js/main.9ea1fc70.js",
+    "static/media/subscribe-background.png": "/slon-um-app/static/media/subscribe-background.d4d6ce71a05babd1fcb0.png",
+    "static/media/sky.svg": "/slon-um-app/static/media/sky.209774ecd96fef282068.svg",
+    "static/media/waves.svg": "/slon-um-app/static/media/waves.6d284919b65215c6d8f9.svg",
+    "static/media/underline3.svg": "/slon-um-app/static/media/underline3.a63d5e15f9ca74219153.svg",
+    "static/media/underline.svg": "/slon-um-app/static/media/underline.1b1e1c46fdd5c19be36f.svg",
+    "static/media/underline2.svg": "/slon-um-app/static/media/underline2.4f07cf2d14208d6ae15f.svg",
+    "index.html": "/slon-um-app/index.html",
+    "main.2b95d73f.css.map": "/slon-um-app/static/css/main.2b95d73f.css.map",
+    "main.9ea1fc70.js.map": "/slon-um-app/static/js/main.9ea1fc70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b95d73f.css",
+    "static/js/main.9ea1fc70.js"
+  ]
+}
